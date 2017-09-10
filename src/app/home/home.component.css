@@ -1,0 +1,22 @@
+.divFormats {
+    width: 400px;
+    margin: 2em;
+}
+
+.commentP {
+    clear: both;
+}
+
+.starFormat {
+    float: left;
+}
+
+.likeSection {
+    float: right;
+}
+
+.inputRatingFormat {
+    background-color: #333;
+    color: white;
+    width: 30px;
+}
