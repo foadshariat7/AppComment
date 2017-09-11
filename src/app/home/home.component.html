@@ -1,13 +1,15 @@
 <div class="divFormats">
     <label for="comment">Comment:</label>
-    <textarea #commentText name="comment" class="form-control"></textarea>
+    <textarea #commentText name="comment" class="form-control">xxxxxx</textarea>
     <button (click)="addComment()" style="margin-top: 1em" class="btn btn-primary">Add Comment</button>
 </div>
 <div class="divFormats" *ngIf="comments != null">
     <div *ngFor="let c of comments">
         <p class="commentP">{{ c.comment }}</p>
         <div class="starFormat">
-            <app-star [rating]="c.numberOfReviews != 0 ? c.star / c.numberOfReviews : 0"></app-star>
+            <app-star [rating]="c.numberOfReviews != 0 ? c.star / c.numberOfReviews : 0">
+                <p>Star Component</p>
+            </app-star>
         </div>
         <div class="likeSection">
             <span>{{c.like}}</span>
